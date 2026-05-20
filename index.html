@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYS://PAPA - PING PONG ARCADE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div id="start-screen" class="overlay">
+        <h1>MODO ARCADE</h1>
+        <p>Demuestra tus reflejos. Juega a 3 puntos para desbloquear el mensaje protegido.</p>
+        <button id="btn-start" class="btn-primary">INICIAR PARTIDA</button>
+    </div>
+    
+    <canvas id="pong"></canvas>
+
+    <div id="end-screen" class="overlay hidden">
+        <h2>Feliz cumpleaños, papá</h2>
+        <p class="homenaje-text">"La disciplina también se juega con reflejos.<br>Tu energía siempre sigue en juego, inspirándonos a todos."</p>
+        <button class="btn-primary" onclick="location.reload()">JUGAR DE NUEVO</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
